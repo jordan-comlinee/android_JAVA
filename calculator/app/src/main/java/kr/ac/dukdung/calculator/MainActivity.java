@@ -50,7 +50,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onTouch(View arg0, MotionEvent arg1) {
                 num1 = edit1.getText().toString();
+                num1 = num1.trim();
                 num2 = edit2.getText().toString();
+                num2 = num2.trim();
 
                 if(num1.equals("")) {
                     textResult.setText("숫자1을 입력하세요");
