@@ -61,9 +61,9 @@ public class MainActivity extends AppCompatActivity {
                 time = timePicker.getHour() + ":" + timePicker.getMinute();
                 String appointment = date + " " + time;
                 Toast.makeText(getApplicationContext(), appointment, Toast.LENGTH_LONG).show();
-                //Intent intent = new Intent(getApplicationContext(), MemoActivity.class);
-                //intent.putExtra("appointment", appointment);
-                //startActivity(intent);
+                Intent intent = new Intent(getApplicationContext(), MemoActivity.class);
+                intent.putExtra("appoint", appointment);
+                startActivity(intent);
             }
         });
     }
