@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-/*
+
     @Override
     protected void onResume() {
         super.onResume();
@@ -85,6 +85,6 @@ public class MainActivity extends AppCompatActivity {
         super.onRestart();
         android.util.Log.i("lifecycle", "Main:onRestart");
     }
-*/
+
 }
 

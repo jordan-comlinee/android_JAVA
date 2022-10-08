@@ -6,7 +6,7 @@ android {
     compileSdk 32
 
     defaultConfig {
-        applicationId "kr.ac.duksung.c"
+        applicationId "kr.ac.duksung.homework5"
         minSdk 21
         targetSdk 32
         versionCode 1

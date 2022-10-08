@@ -32,7 +32,7 @@ public class MemoActivity extends AppCompatActivity {
         });
 
     }
-    /*
+
     @Override
     protected void onResume() {
         super.onResume();
@@ -44,6 +44,6 @@ public class MemoActivity extends AppCompatActivity {
         super.onStop();
         android.util.Log.i("lifecycle", "Memo:onStop");
     }
-     */
+
 }
 
