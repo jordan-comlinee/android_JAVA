@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TimePicker;
 import android.widget.Toast;
@@ -17,6 +18,7 @@ public class AddActivity extends AppCompatActivity {
     DatePicker datePicker;
     TimePicker timePicker;
     String date, time;
+    EditText editText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +26,7 @@ public class AddActivity extends AppCompatActivity {
         setContentView(R.layout.activity_add);
         // android.util.Log.i("lifecycle", "Main:onCreate");
 
+        editText = (EditText) findViewById(R.id.editText);
         button = (Button) findViewById(R.id.button);
         rdoDate = (RadioButton) findViewById(R.id.radioButton1);
         rdoTime = (RadioButton) findViewById(R.id.radioButton2);
@@ -60,10 +63,11 @@ public class AddActivity extends AppCompatActivity {
             public void onClick(View view) {
                 time = timePicker.getHour() + ":" + timePicker.getMinute();
                 String appointment = date + " " + time;
+                String result = appointment + "->" + editText.getText().toString();
                 Toast.makeText(getApplicationContext(), appointment, Toast.LENGTH_LONG).show();
-            //    Intent intent = new Intent(getApplicationContext(), MemoActivity.class);
-            //    intent.putExtra("appoint", appointment);
-            //    startActivity(intent);
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                intent.putExtra("appoint", result);
+                setResult(RESULT_OK, intent);
             }
         });
     }
