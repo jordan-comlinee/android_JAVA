@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         editNumber1 = (EditText) findViewById(R.id.editTextNumber1);
         editNumber2 = (EditText) findViewById(R.id.editTextNumber2);
         button = (Button) findViewById(R.id.button);
-        radiogroup = (RadioGroup) findViewById(R.id.radiogroup);
+        radiogroup = (RadioGroup) findViewById(R.id.radioGroup);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
