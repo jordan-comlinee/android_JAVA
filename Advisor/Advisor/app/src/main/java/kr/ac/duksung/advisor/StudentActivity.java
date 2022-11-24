@@ -32,7 +32,8 @@ public class StudentActivity extends AppCompatActivity {
         listView.setAdapter(adapter);
         // local server
         //       String urlString = "http://10.0.2.2:8080/FinalProject/advisorPro.jsp";
-        String urlString = "http://203.252.213.36:8080/FinalProject/advisorPro.jsp";
+        String urlString = "http://10.219.0.15:8080/FinalProject/advisorPro.jsp";
+        //String urlString = "http://203.252.213.36:8080/FinalProject/advisorPro.jsp";
         Intent intent = getIntent();
         String professor = intent.getStringExtra("professor");
 
